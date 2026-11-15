@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito:wght@500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#FFF6E9;
+  --surface:#FFFFFF;
+  --surface-2:#FFF0D6;
+  --ink:#211A3D;
+  --muted:#6B6488;
+  --line:#EADFCB;
+  --primary:#6C4CF1;
+  --primary-2:#FF5A8A;
+  --teal:#00B7A6;
+  --amber:#FFB020;
+  --lime:#8BD346;
+  --safe-area-inset-top:0px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#17152B;
+    --surface:#241F42;
+    --surface-2:#2D2752;
+    --ink:#FFF7E8;
+    --muted:#C6BFE3;
+    --line:#443C72;
+    --primary:#9A82FF;
+    --primary-2:#FF6B9C;
+    --teal:#2AD3BE;
+    --amber:#FFC24B;
+    --lime:#A9E15D;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,sans-serif}
+.font-display{font-family:'Bricolage Grotesque','Nunito',sans-serif}
+button,input,select{font:inherit}
+button{cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.55}
+.node-shadow{box-shadow:0 10px 24px rgba(33,26,61,.18)}
+.no-select{user-select:none;-webkit-user-select:none}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#D8CBF5;border-radius:99px}
